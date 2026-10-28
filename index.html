@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Chi l’ha scritto?</title>
+  <meta name="description" content="Gioco di gruppo: rispondete alle domande e indovinate chi ha scritto ogni risposta.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📝</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="bar">
+    <a class="brand" href="/">Chi l’ha scritto?</a>
+    <div id="roomTag" class="room-tag" hidden></div>
+  </header>
+
+  <div id="offline" class="offline" role="status" hidden>Connessione persa, mi sto ricollegando…</div>
+
+  <main id="app" class="app" aria-live="polite"></main>
+
+  <div id="toast" class="toast" role="alert" hidden></div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
